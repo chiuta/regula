@@ -1,0 +1,29 @@
+{
+  "id": "fox-and-geese",
+  "name": "Fox and Geese",
+  "region": "Northern Europe",
+  "players": 2,
+  "board": {
+    "type": "cross",
+    "size": 33
+  },
+  "pieces": [
+    {
+      "id": "fox",
+      "count": 1
+    },
+    {
+      "id": "goose",
+      "count": 13
+    }
+  ],
+  "setup": "Fox in the centre; geese on the 13 points at the bottom.",
+  "moves": [
+    "Geese move one step forward or sideways.",
+    "The fox moves one step in any direction and may jump over a goose."
+  ],
+  "win": "Geese win by trapping the fox; the fox wins by capturing enough geese.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Fox_games"
+  ]
+}
