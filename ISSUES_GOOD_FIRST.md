@@ -1,5 +1,7 @@
 # Good first issues
 
+**English** · [Română](ISSUES_GOOD_FIRST.ro.md) · [Français](ISSUES_GOOD_FIRST.fr.md) · [Italiano](ISSUES_GOOD_FIRST.it.md) · [Español](ISSUES_GOOD_FIRST.es.md) · [Português](ISSUES_GOOD_FIRST.pt.md) · [Deutsch](ISSUES_GOOD_FIRST.de.md) · [Magyar](ISSUES_GOOD_FIRST.hu.md)
+
 - [ ] Write the JSON schema v1.0 for moves (step, jump, capture, drop) and document it in docs/moves.md
 - [ ] Add 5 classic games as data: Nine Men's Morris, Alquerque, Hnefatafl, Mu Torere, Fanorona
 - [ ] Add 5 Romanian traditional games (e.g. Table, Remi variants, Șapte, Jocul morii)
