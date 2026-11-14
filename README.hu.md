@@ -2,13 +2,27 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-Verzió: 0.1.0 · Utolsó frissítés: 2026-11-13
+Verzió: 0.1.0 · Utolsó frissítés: 2026-11-14
 
 🌐 https://regula.chiuta.ro
 
 > Írj le bármilyen hagyományos tábla- vagy kártyajátékot egy JSON-fájlban, és játssz vele — egyetlen szabálymotor minden játékhoz.
 
 Trade-free: nincs követés, nincs reklám, nincs fiók, offline is működik.
+
+## Állapot
+
+Alfa: a tároló a szerkezetet, az adatsémát vagy az első példákat és a közreműködési útmutatókat tartalmazza. Az alábbi terjedelem a terv, nem a ma működő állapot.
+
+## Tervezett terjedelem
+
+- JSON-séma v1.0 a lépésekhez (lépés, ugrás, ütés, lerakás), a `docs/moves.md` fájlban dokumentálva, és egységtesztek a lépésellenőrzőhöz.
+- Klasszikus játékok adatként: malom, Alquerque, Hnefatafl, Mu Torere és Fanorona, valamint öt hagyományos román játék.
+- Minimális böngészős megjelenítő a `board.type = grid` típushoz, és véletlen lépéseket tevő ellenfél, amely bármely érvényes játékfájllal működik.
+- Három kártyajáték-példa a séma `deck` szakaszával.
+- Szabály-szöveg generátorok (angol és román) és rövid útmutató: „Add hozzá a nagyszüleid játékát 20 perc alatt”.
+
+Ezek közül még semmi sincs megvalósítva: minden pont kész feladat az `ISSUES_GOOD_FIRST.md` fájlban.
 
 ## Járulj hozzá 5 perc alatt
 

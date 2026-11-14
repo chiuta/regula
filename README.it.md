@@ -2,13 +2,27 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · **Italiano** · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-Versione: 0.1.0 · Ultimo aggiornamento: 2026-11-13
+Versione: 0.1.0 · Ultimo aggiornamento: 2026-11-14
 
 🌐 https://regula.chiuta.ro
 
 > Descrivi qualsiasi gioco tradizionale da tavolo o di carte in un file JSON e giocaci — un solo motore di regole per tutti i giochi.
 
 Trade-free: nessun tracciamento, nessuna pubblicità, nessun account, funziona offline.
+
+## Stato
+
+Alpha: il repository contiene la struttura, lo schema dati o i primi esempi e le guide al contributo. L’ambito qui sotto è il piano, non ciò che funziona oggi.
+
+## Ambito previsto
+
+- Uno schema JSON v1.0 per le mosse (passo, salto, cattura, posa), documentato in `docs/moves.md`, e test unitari per il validatore di mosse.
+- Giochi classici come dati: Mulino, Alquerque, Hnefatafl, Mu Torere e Fanorona, più cinque giochi tradizionali romeni.
+- Un renderer minimo nel browser per `board.type = grid` e un avversario a mosse casuali che funziona con qualsiasi file di gioco valido.
+- Tre esempi di giochi di carte con una sezione `deck` nello schema.
+- Generatori di regole in testo (inglese e romeno) e un breve tutorial: «Aggiungi il gioco dei tuoi nonni in 20 minuti».
+
+Nulla di tutto ciò è ancora implementato: ogni voce è un compito pronto in `ISSUES_GOOD_FIRST.md`.
 
 ## Contribuisci in 5 minuti
 
