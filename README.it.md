@@ -4,6 +4,8 @@
 
 Versione: 0.1.0 · Ultimo aggiornamento: 2026-11-13
 
+🌐 https://regula.chiuta.ro
+
 > Descrivi qualsiasi gioco tradizionale da tavolo o di carte in un file JSON e giocaci — un solo motore di regole per tutti i giochi.
 
 Trade-free: nessun tracciamento, nessuna pubblicità, nessun account, funziona offline.

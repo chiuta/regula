@@ -4,6 +4,8 @@
 
 Version : 0.1.0 · Dernière mise à jour : 2026-11-13
 
+🌐 https://regula.chiuta.ro
+
 > Décrivez n'importe quel jeu de plateau ou de cartes traditionnel dans un fichier JSON et jouez-y — un seul moteur de règles pour tous les jeux.
 
 Trade-free : sans suivi, sans publicité, sans compte, fonctionne hors ligne.

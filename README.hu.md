@@ -4,6 +4,8 @@
 
 Verzió: 0.1.0 · Utolsó frissítés: 2026-11-13
 
+🌐 https://regula.chiuta.ro
+
 > Írj le bármilyen hagyományos tábla- vagy kártyajátékot egy JSON-fájlban, és játssz vele — egyetlen szabálymotor minden játékhoz.
 
 Trade-free: nincs követés, nincs reklám, nincs fiók, offline is működik.

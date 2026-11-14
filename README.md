@@ -4,6 +4,8 @@
 
 Version: 0.1.0 · Last updated: 2026-11-13
 
+🌐 https://regula.chiuta.ro
+
 > Describe any traditional board or card game in a JSON file and play it — one rules engine for every game.
 
 Trade-free: no tracking, no ads, no accounts, works offline.

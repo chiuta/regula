@@ -4,6 +4,8 @@
 
 Versiune: 0.1.0 · Ultima actualizare: 2026-11-13
 
+🌐 https://regula.chiuta.ro
+
 > Descrie orice joc tradițional de tablă sau de cărți într-un fișier JSON și joacă-l — un singur motor de reguli pentru toate jocurile.
 
 Fără comerț (trade-free): fără urmărire, fără reclame, fără conturi, funcționează offline.
