@@ -1,0 +1,108 @@
+{
+  "id": "mu-torere",
+  "name": "Mū tōrere",
+  "names": {
+    "en": "Mū tōrere",
+    "ro": "Mū tōrere",
+    "fr": "Mū tōrere",
+    "de": "Mū tōrere",
+    "es": "Mū tōrere",
+    "it": "Mū tōrere",
+    "hu": "Mū tōrere",
+    "pt": "Mū tōrere"
+  },
+  "region": "Aotearoa / New Zealand (Māori)",
+  "players": 2,
+  "status": "established",
+  "board": {
+    "type": "graph",
+    "points": {
+      "p": [0, 0],
+      "k1": [0, 3],
+      "k2": [2.12, 2.12],
+      "k3": [3, 0],
+      "k4": [2.12, -2.12],
+      "k5": [0, -3],
+      "k6": [-2.12, -2.12],
+      "k7": [-3, 0],
+      "k8": [-2.12, 2.12]
+    },
+    "lines": [
+      ["k1", "k2"],
+      ["k2", "k3"],
+      ["k3", "k4"],
+      ["k4", "k5"],
+      ["k5", "k6"],
+      ["k6", "k7"],
+      ["k7", "k8"],
+      ["k8", "k1"],
+      ["p", "k1"],
+      ["p", "k2"],
+      ["p", "k3"],
+      ["p", "k4"],
+      ["p", "k5"],
+      ["p", "k6"],
+      ["p", "k7"],
+      ["p", "k8"]
+    ],
+    "sets": {
+      "putahi": ["p"]
+    }
+  },
+  "pieces": [
+    {
+      "id": "counter",
+      "count": 4
+    }
+  ],
+  "setup": "Eight outer points (kewai) around a centre point (pūtahi); each side has four counters on four adjacent kewai; the pūtahi is empty. Black starts.",
+  "moves": ["A counter moves to an adjacent empty point; from the pūtahi it may go to any empty kewai.", "A counter may enter the pūtahi only if it stands next to an enemy counter."],
+  "win": "The player who blocks all of the opponent's counters wins.",
+  "sources": ["https://en.wikipedia.org/wiki/M%C5%AB_t%C5%8Drere", "https://www.history-nz.org/torere.html"],
+  "notes": {
+    "en": "Main rule set (R. C. Bell). A variant applies the restriction on entering the pūtahi only during the first two moves of each side; it is not implemented. A repeated position (three times) is declared drawn — an app convention, since players can circle forever.",
+    "ro": "Setul principal de reguli (R. C. Bell). O variantă aplică restricția la intrarea în pūtahi doar în primele două mutări ale fiecărei părți; nu este implementată. O poziție repetată (de trei ori) se declară remiză — convenție a aplicației, deoarece jucătorii pot învârti la nesfârșit.",
+    "fr": "Jeu de règles principal (R. C. Bell). Une variante n’applique la restriction d’entrée dans le pūtahi que pendant les deux premiers coups de chaque camp ; elle n’est pas implémentée. Une position répétée (trois fois) est déclarée nulle — convention de l’application, car les joueurs peuvent tourner en rond indéfiniment.",
+    "it": "Insieme principale di regole (R. C. Bell). Una variante applica la restrizione sull’ingresso nel pūtahi solo durante le prime due mosse di ciascun lato; non è implementata. Una posizione ripetuta (tre volte) è dichiarata patta — convenzione dell’app, perché i giocatori possono girare in tondo all’infinito.",
+    "es": "Conjunto principal de reglas (R. C. Bell). Una variante aplica la restricción de entrada al pūtahi solo durante las dos primeras jugadas de cada bando; no está implementada. Una posición repetida (tres veces) se declara tablas — convención de la aplicación, porque los jugadores pueden dar vueltas indefinidamente.",
+    "pt": "Conjunto principal de regras (R. C. Bell). Uma variante aplica a restrição à entrada no pūtahi apenas durante as duas primeiras jogadas de cada lado; não está implementada. Uma posição repetida (três vezes) é declarada empate — convenção da aplicação, porque os jogadores podem andar em círculos para sempre.",
+    "de": "Hauptregelwerk (R. C. Bell). Eine Variante wendet die Einschränkung für das Betreten des Pūtahi nur in den ersten zwei Zügen jeder Seite an; sie ist nicht umgesetzt. Eine wiederholte Stellung (dreimal) wird für remis erklärt – eine Konvention der App, da die Spielenden sonst endlos im Kreis ziehen können.",
+    "hu": "Fő szabályrendszer (R. C. Bell). Egy változat a pūtahiba lépés korlátozását csak mindkét oldal első két lépésére alkalmazza; ez nincs megvalósítva. A háromszor ismételt állást döntetlennek nyilvánítja az alkalmazás – ez megállapodás, mert a játékosok végtelenül körbe-körbe léphetnének."
+  },
+  "rules": {
+    "sides": ["black", "white"],
+    "first": "black",
+    "setup": {
+      "points": {
+        "k1": "black:counter",
+        "k2": "black:counter",
+        "k3": "black:counter",
+        "k4": "black:counter",
+        "k5": "white:counter",
+        "k6": "white:counter",
+        "k7": "white:counter",
+        "k8": "white:counter"
+      }
+    },
+    "moves": [
+      {
+        "type": "step",
+        "toNot": "putahi"
+      },
+      {
+        "type": "step",
+        "to": "putahi",
+        "requires": "adjacent-enemy"
+      }
+    ],
+    "win": [
+      {
+        "type": "blocked"
+      },
+      {
+        "type": "draw",
+        "repeat": 3
+      }
+    ]
+  }
+}

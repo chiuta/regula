@@ -1,0 +1,50 @@
+{
+  "id": "three-mens-morris",
+  "name": "Three Men's Morris",
+  "region": "Europe (Roman times and the Middle Ages)",
+  "players": 2,
+  "status": "reconstructed",
+  "board": {
+    "type": "graph",
+    "points": {
+      "a1": [0, 0], "b1": [1, 0], "c1": [2, 0],
+      "a2": [0, 1], "b2": [1, 1], "c2": [2, 1],
+      "a3": [0, 2], "b3": [1, 2], "c3": [2, 2]
+    },
+    "lines": [
+      ["a1", "b1", "c1"], ["a2", "b2", "c2"], ["a3", "b3", "c3"],
+      ["a1", "a2", "a3"], ["b1", "b2", "b3"], ["c1", "c2", "c3"],
+      ["a1", "b2", "c3"], ["a3", "b2", "c1"]
+    ]
+  },
+  "pieces": [
+    { "id": "man", "count": 3 }
+  ],
+  "setup": "The board is empty. Each player has three pieces in hand.",
+  "moves": [
+    "Players take turns placing one piece on any empty point until all six pieces are on the board.",
+    "Then each turn one piece moves along a line to an adjacent empty point."
+  ],
+  "win": "The first player to get their three pieces in a row along a line wins.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Three_men%27s_morris"
+  ],
+  "notes": {
+    "en": "Sources differ on the moving phase: some let a piece go to any empty point, most describe a step to an adjacent point along a line. This file uses the step. Some sources also forbid the first piece in the centre; this file does not. A draw by the same position three times is a convention of the app.",
+    "ro": "Sursele diferă la faza de mutare: unele lasă piesa să meargă pe orice punct liber, cele mai multe descriu un pas pe un punct vecin, de-a lungul unei linii. Fișierul folosește pasul. Unele surse interzic și prima piesă în centru; fișierul nu o face. Remiza prin aceeași poziție de trei ori este o convenție a aplicației."
+  },
+  "rules": {
+    "sides": ["white", "black"],
+    "first": "white",
+    "hand": { "white": 3, "black": 3 },
+    "setup": { "points": {} },
+    "moves": [
+      { "type": "drop", "piece": "man", "when": { "hand": "some" } },
+      { "type": "step", "when": { "hand": "none" } }
+    ],
+    "win": [
+      { "type": "line", "len": 3 },
+      { "type": "draw", "repeat": 3 }
+    ]
+  }
+}

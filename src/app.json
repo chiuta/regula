@@ -1,0 +1,13 @@
+{
+  "slug": "regula",
+  "version": "0.2.0",
+  "updated": "2026-11-17",
+  "plugins": null,
+  "data": "data/games",
+  "pwa": {
+    "categories": [
+      "games",
+      "entertainment"
+    ]
+  }
+}

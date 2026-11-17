@@ -1,0 +1,131 @@
+{
+  "id": "hnefatafl",
+  "name": "Hnefatafl (Copenhagen 11 × 11, simplified)",
+  "names": {
+    "en": "Hnefatafl (Copenhagen 11 × 11, simplified)",
+    "ro": "Hnefatafl (Copenhaga 11 × 11, simplificat)",
+    "fr": "Hnefatafl (Copenhague 11 × 11, simplifié)",
+    "de": "Hnefatafl (Kopenhagen 11 × 11, vereinfacht)",
+    "es": "Hnefatafl (Copenhague 11 × 11, simplificado)",
+    "it": "Hnefatafl (Copenaghen 11 × 11, semplificato)",
+    "hu": "Hnefatafl (koppenhágai 11 × 11, egyszerűsített)",
+    "pt": "Hnefatafl (Copenhaga 11 × 11, simplificado)"
+  },
+  "region": "Northern Europe (Viking Age); modern Copenhagen rule set",
+  "players": 2,
+  "status": "simplified",
+  "board": {
+    "type": "grid",
+    "w": 11,
+    "h": 11,
+    "render": "cells",
+    "sets": {
+      "throne": ["f6"]
+    }
+  },
+  "pieces": [
+    {
+      "id": "attacker",
+      "side": "attackers",
+      "count": 24
+    },
+    {
+      "id": "defender",
+      "side": "defenders",
+      "count": 12,
+      "value": 2
+    },
+    {
+      "id": "king",
+      "side": "defenders",
+      "count": 1,
+      "value": 6
+    }
+  ],
+  "setup": "24 attackers on the four edges, 12 defenders and the king (on the throne) in the middle. The attackers start.",
+  "moves": ["Every piece moves like a rook, any number of empty squares in a straight line; only the king may stop on the throne or on a corner; other pieces may pass over the empty throne.", "A piece other than the king is captured when the opponent's move sandwiches it in a line between two of his pieces, or between one piece and a hostile square (corners; the throne, always for attackers, only when empty for defenders). The king can take part in captures.", "The king is captured when surrounded on all four sides by attackers (three if next to the throne); he cannot be captured on the board edge."],
+  "win": "The defenders win when the king reaches a corner; the attackers win by capturing the king. A player who cannot move loses.",
+  "sources": ["https://aagenielsen.dk/copenhagen_rules.php", "https://en.wikipedia.org/wiki/Tafl_games"],
+  "notes": {
+    "en": "Simplified Copenhagen rules. NOT implemented: the shieldwall capture, the edge-fort win for the defenders, the attackers' win by encircling all defenders, and the ban on repeating positions (a threefold repetition is drawn here). Many other tafl variants (Brandubh, Tablut, Fetlar) differ in size, king strength and escape squares.",
+    "ro": "Reguli Copenhaga simplificate. NEIMPLEMENTATE: captura „zid de scuturi”, victoria apărătorilor prin „fort pe margine”, victoria atacatorilor prin încercuirea tuturor apărătorilor și interzicerea repetării pozițiilor (aici o repetare de trei ori este remiză). Multe alte variante tafl (Brandubh, Tablut, Fetlar) diferă prin dimensiune, puterea regelui și pătratele de scăpare.",
+    "fr": "Règles de Copenhague simplifiées. NON implémentés : la capture par mur de boucliers, la victoire des défenseurs par fort de bord, la victoire des attaquants en encerclant tous les défenseurs et l’interdiction de répéter les positions (ici, trois répétitions donnent la nulle). Beaucoup d’autres variantes du tafl (Brandubh, Tablut, Fetlar) diffèrent par la taille, la force du roi et les cases d’évasion.",
+    "it": "Regole di Copenaghen semplificate. NON implementati: la cattura con il muro di scudi, la vittoria dei difensori con il forte sul bordo, la vittoria degli attaccanti accerchiando tutti i difensori e il divieto di ripetere le posizioni (qui tre ripetizioni danno la patta). Molte altre varianti del tafl (Brandubh, Tablut, Fetlar) differiscono per dimensione, forza del re e caselle di fuga.",
+    "es": "Reglas de Copenhague simplificadas. NO implementados: la captura por muro de escudos, la victoria de los defensores con el fuerte del borde, la victoria de los atacantes cercando a todos los defensores y la prohibición de repetir posiciones (aquí tres repeticiones dan tablas). Muchas otras variantes del tafl (Brandubh, Tablut, Fetlar) difieren en tamaño, fuerza del rey y casillas de escape.",
+    "pt": "Regras de Copenhaga simplificadas. NÃO implementados: a captura por muro de escudos, a vitória dos defensores com o forte na margem, a vitória dos atacantes por cercar todos os defensores e a proibição de repetir posições (aqui três repetições dão empate). Muitas outras variantes do tafl (Brandubh, Tablut, Fetlar) diferem no tamanho, na força do rei e nas casas de fuga.",
+    "de": "Vereinfachte Kopenhagener Regeln. NICHT umgesetzt: der Schildwall-Fang, der Sieg der Verteidiger durch die Randfestung, der Sieg der Angreifer durch Einkreisen aller Verteidiger und das Verbot, Stellungen zu wiederholen (hier ergibt eine dreifache Wiederholung Remis). Viele andere Tafl-Varianten (Brandubh, Tablut, Fetlar) unterscheiden sich in Größe, Stärke des Königs und Fluchtfeldern.",
+    "hu": "Egyszerűsített koppenhágai szabályok. NINCS megvalósítva: a pajzsfal-fogás, a védők győzelme a peremerőddel, a támadók győzelme az összes védő bekerítésével és az állások ismétlésének tilalma (itt háromszori ismétlés döntetlen). Sok más tafl-változat (Brandubh, Tablut, Fetlar) a méretben, a király erejében és a menekülő mezőkben tér el."
+  },
+  "rules": {
+    "sides": ["attackers", "defenders"],
+    "first": "attackers",
+    "setup": {
+      "rows": ["...aaaaa...", ".....a.....", "...........", "a....d....a", "a...ddd...a", "aa.ddKdd.aa", "a...ddd...a", "a....d....a", "...........", ".....a.....", "...aaaaa..."],
+      "legend": {
+        "a": "attackers:attacker",
+        "d": "defenders:defender",
+        "K": "defenders:king"
+      }
+    },
+    "moves": [
+      {
+        "type": "slide",
+        "dirs": "orth"
+      },
+      {
+        "type": "custodial",
+        "dirs": "orth",
+        "immune": ["king"],
+        "hostile": [
+          {
+            "set": "corners"
+          },
+          {
+            "set": "throne",
+            "to": "attackers"
+          },
+          {
+            "set": "throne",
+            "to": "defenders",
+            "onlyEmpty": true
+          }
+        ]
+      },
+      {
+        "type": "king-capture",
+        "piece": "king",
+        "throne": "throne",
+        "edgeSafe": true
+      }
+    ],
+    "restricted": [
+      {
+        "set": "corners",
+        "allow": ["king"]
+      },
+      {
+        "set": "throne",
+        "allow": ["king"],
+        "through": true
+      }
+    ],
+    "win": [
+      {
+        "type": "reach",
+        "piece": "king",
+        "set": "corners"
+      },
+      {
+        "type": "lose-when-none",
+        "piece": "king"
+      },
+      {
+        "type": "blocked"
+      },
+      {
+        "type": "draw",
+        "repeat": 3
+      }
+    ]
+  }
+}

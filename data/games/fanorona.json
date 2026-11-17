@@ -1,0 +1,85 @@
+{
+  "id": "fanorona",
+  "name": "Fanorona",
+  "names": {
+    "en": "Fanorona",
+    "ro": "Fanorona",
+    "fr": "Fanorona",
+    "de": "Fanorona",
+    "es": "Fanorona",
+    "it": "Fanorona",
+    "hu": "Fanorona",
+    "pt": "Fanorona"
+  },
+  "region": "Madagascar (Fanoron-Sivy, 5 × 9)",
+  "players": 2,
+  "status": "established",
+  "board": {
+    "type": "grid",
+    "w": 9,
+    "h": 5,
+    "diagonals": "alternate"
+  },
+  "pieces": [
+    {
+      "id": "man",
+      "count": 22
+    }
+  ],
+  "setup": "Each side has 22 stones; every point except the centre is occupied; the middle row alternates colours. White starts.",
+  "moves": ["A stone moves one step along a line to an empty point; if any capture exists, a capture must be played.", "Approach: moving toward an enemy stone along the line captures it and the unbroken line behind it. Withdrawal: moving away from an adjacent enemy stone along the line does the same.", "The capturing stone may continue capturing: never twice in the same direction in a row, never back to a point already visited; it may stop at any time."],
+  "win": "Capture all enemy stones; if neither side can, the game is drawn.",
+  "sources": ["https://en.wikipedia.org/wiki/Fanorona", "https://www.mindsports.nl/index.php/on-the-evolution-of-draughts-variants/contact-draughts/490-fanorona"],
+  "notes": {
+    "en": "Main variant (Fanoron-Sivy). The sources show the starting position only as a diagram; here the middle row reads black, white, black, white, empty, black, white, black, white from the left (the mirror image is equivalent). The draw rules (a position repeated three times, or 100 turns without capture) are app conventions: players normally agree a draw.",
+    "ro": "Varianta principală (Fanoron-Sivy). Sursele arată poziția de start doar ca diagramă; aici rândul de mijloc este, de la stânga, negru, alb, negru, alb, gol, negru, alb, negru, alb (imaginea în oglindă este echivalentă). Regulile de remiză (aceeași poziție de trei ori sau 100 de ture fără captură) sunt convenții ale aplicației: jucătorii convin de obicei remiza.",
+    "fr": "Variante principale (Fanoron-Sivy). Les sources ne montrent la position de départ que sous forme de schéma ; ici la rangée du milieu se lit, depuis la gauche : noir, blanc, noir, blanc, vide, noir, blanc, noir, blanc (l’image miroir est équivalente). Les règles de nulle (une position répétée trois fois, ou 100 tours sans capture) sont des conventions de l’application : les joueurs conviennent normalement d’une nulle.",
+    "it": "Variante principale (Fanoron-Sivy). Le fonti mostrano la posizione iniziale solo come diagramma; qui la riga centrale, da sinistra, è: nero, bianco, nero, bianco, vuoto, nero, bianco, nero, bianco (l’immagine speculare è equivalente). Le regole della patta (una posizione ripetuta tre volte, o 100 turni senza catture) sono convenzioni dell’app: di solito i giocatori concordano la patta.",
+    "es": "Variante principal (Fanoron-Sivy). Las fuentes muestran la posición inicial solo como diagrama; aquí la fila central se lee, desde la izquierda: negra, blanca, negra, blanca, vacía, negra, blanca, negra, blanca (la imagen especular es equivalente). Las reglas de tablas (una posición repetida tres veces, o 100 turnos sin captura) son convenciones de la aplicación: normalmente los jugadores acuerdan las tablas.",
+    "pt": "Variante principal (Fanoron-Sivy). As fontes mostram a posição inicial apenas como diagrama; aqui a fila do meio lê-se, a partir da esquerda: preta, branca, preta, branca, vazia, preta, branca, preta, branca (a imagem espelhada é equivalente). As regras de empate (uma posição repetida três vezes, ou 100 turnos sem captura) são convenções da aplicação: normalmente os jogadores acordam o empate.",
+    "de": "Hauptvariante (Fanoron-Sivy). Die Quellen zeigen die Ausgangsstellung nur als Diagramm; hier lautet die mittlere Reihe von links: schwarz, weiß, schwarz, weiß, leer, schwarz, weiß, schwarz, weiß (das Spiegelbild ist gleichwertig). Die Remisregeln (dreimal dieselbe Stellung oder 100 Züge ohne Schlag) sind Konventionen der App: Die Spielenden einigen sich normalerweise auf Remis.",
+    "hu": "Fő változat (Fanoron-Sivy). A források a kiinduló állást csak ábraként mutatják; itt a középső sor balról: fekete, fehér, fekete, fehér, üres, fekete, fehér, fekete, fehér (a tükörkép egyenértékű). A döntetlen-szabályok (háromszor ismételt állás vagy 100 kör ütés nélkül) az alkalmazás megállapodásai: a játékosok általában megegyeznek a döntetlenben."
+  },
+  "rules": {
+    "sides": ["white", "black"],
+    "first": "white",
+    "mandatoryCapture": true,
+    "setup": {
+      "rows": ["bbbbbbbbb", "bbbbbbbbb", "bwbw.bwbw", "wwwwwwwww", "wwwwwwwww"],
+      "legend": {
+        "b": "black:man",
+        "w": "white:man"
+      }
+    },
+    "moves": [
+      {
+        "type": "step",
+        "dirs": "all"
+      },
+      {
+        "type": "approach-withdraw",
+        "dirs": "all",
+        "chain": "optional",
+        "noRevisit": true,
+        "noSameDir": true
+      }
+    ],
+    "win": [
+      {
+        "type": "eliminate",
+        "below": 1
+      },
+      {
+        "type": "blocked"
+      },
+      {
+        "type": "draw",
+        "repeat": 3
+      },
+      {
+        "type": "draw",
+        "noCaptureTurns": 100
+      }
+    ]
+  }
+}

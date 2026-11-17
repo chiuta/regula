@@ -1,0 +1,90 @@
+{
+  "id": "alquerque",
+  "name": "Alquerque",
+  "names": {
+    "en": "Alquerque",
+    "ro": "Alquerque (al-quirkat)",
+    "fr": "Alquerque",
+    "de": "Alquerque",
+    "es": "Alquerque",
+    "it": "Alquerque",
+    "hu": "Alquerque",
+    "pt": "Alquerque"
+  },
+  "region": "Middle East and Spain (Libro de los juegos, 1283)",
+  "players": 2,
+  "status": "reconstructed",
+  "board": {
+    "type": "grid",
+    "w": 5,
+    "h": 5,
+    "diagonals": "alternate",
+    "forward": {
+      "white": [0, 1],
+      "black": [0, -1]
+    },
+    "sets": {
+      "far": {
+        "white": ["a5", "b5", "c5", "d5", "e5"],
+        "black": ["a1", "b1", "c1", "d1", "e1"]
+      }
+    }
+  },
+  "pieces": [
+    {
+      "id": "man",
+      "count": 12
+    }
+  ],
+  "setup": "Each side has twelve men on the two rows nearest to it and the two right-hand points of the middle row; the centre is empty.",
+  "moves": ["A man moves one step along a line to an empty point, forward or sideways.", "A man captures by jumping over an adjacent enemy man to the empty point beyond; jumps must continue while possible; capturing is compulsory.", "A man that reaches the enemy back row can only capture."],
+  "win": "Capture all enemy men, or leave the opponent unable to move.",
+  "sources": ["https://en.wikipedia.org/wiki/Alquerque", "https://mastersofgames.com/rules/alquerque-rules.htm"],
+  "notes": {
+    "en": "The 1283 manuscript is incomplete (R. C. Bell: not enough to play). Implemented: Alfonso X plus Bell's additions — no backward moves and the back-row rule. Choices not fixed by the sources: captures follow the same directions as steps (forward or sideways); compulsory capture replaces the \"huffing\" penalty. Other reconstructions differ.",
+    "ro": "Manuscrisul din 1283 este incomplet (R. C. Bell: insuficient pentru a juca). Implementat: Alfonso X plus completările lui Bell — fără mutări înapoi și regula ultimului rând. Alegeri pe care sursele nu le fixează: capturile merg în aceleași direcții ca pașii (înainte sau lateral); captura obligatorie înlocuiește penalizarea „huffing”. Alte reconstituiri diferă.",
+    "fr": "Le manuscrit de 1283 est incomplet (R. C. Bell : insuffisant pour jouer). Implémenté : Alphonse X plus les compléments de Bell — pas de coup en arrière et la règle de la dernière rangée. Choix que les sources ne fixent pas : les captures suivent les mêmes directions que les pas (en avant ou de côté) ; la prise obligatoire remplace la pénalité du « huffing ». D’autres reconstitutions diffèrent.",
+    "it": "Il manoscritto del 1283 è incompleto (R. C. Bell: non basta per giocare). Implementato: Alfonso X più le aggiunte di Bell — niente mosse all’indietro e la regola dell’ultima riga. Scelte che le fonti non fissano: le catture seguono le stesse direzioni dei passi (in avanti o di lato); la cattura obbligatoria sostituisce la penalità «huffing». Altre ricostruzioni differiscono.",
+    "es": "El manuscrito de 1283 está incompleto (R. C. Bell: insuficiente para jugar). Implementado: Alfonso X más las adiciones de Bell — sin jugadas hacia atrás y la regla de la última fila. Decisiones que las fuentes no fijan: las capturas siguen las mismas direcciones que los pasos (hacia delante o de lado); la captura obligatoria sustituye la penalización «huffing». Otras reconstrucciones difieren.",
+    "pt": "O manuscrito de 1283 está incompleto (R. C. Bell: insuficiente para jogar). Implementado: Afonso X mais os acrescentos de Bell — sem jogadas para trás e a regra da última fila. Escolhas que as fontes não fixam: as capturas seguem as mesmas direções dos passos (para a frente ou de lado); a captura obrigatória substitui a penalização «huffing». Outras reconstruções diferem.",
+    "de": "Das Manuskript von 1283 ist unvollständig (R. C. Bell: nicht genug zum Spielen). Umgesetzt: Alfons X. plus Bells Ergänzungen – keine Rückwärtszüge und die Regel der hintersten Reihe. Entscheidungen, die die Quellen nicht festlegen: Schlagzüge folgen denselben Richtungen wie Schritte (vorwärts oder seitwärts); der Schlagzwang ersetzt die Strafe „Huffing“. Andere Rekonstruktionen weichen ab.",
+    "hu": "Az 1283-as kézirat hiányos (R. C. Bell: nem elég a játékhoz). Megvalósítva: X. Alfonz plusz Bell kiegészítései – nincs hátralépés, és érvényes a hátsó sor szabálya. A források által nem rögzített döntések: az ütések ugyanabba az irányba mennek, mint a lépések (előre vagy oldalra); a kötelező ütés váltja fel a „huffing” büntetést. Más rekonstrukciók eltérnek."
+  },
+  "rules": {
+    "sides": ["white", "black"],
+    "first": "white",
+    "mandatoryCapture": true,
+    "setup": {
+      "rows": ["bbbbb", "bbbbb", "bb.ww", "wwwww", "wwwww"],
+      "legend": {
+        "b": "black:man",
+        "w": "white:man"
+      }
+    },
+    "moves": [
+      {
+        "type": "step",
+        "dirs": ["fwd", "side"],
+        "fromNot": "far"
+      },
+      {
+        "type": "jump",
+        "dirs": ["fwd", "side"],
+        "chain": "forced"
+      }
+    ],
+    "win": [
+      {
+        "type": "eliminate",
+        "below": 1
+      },
+      {
+        "type": "blocked"
+      },
+      {
+        "type": "draw",
+        "repeat": 3
+      }
+    ]
+  }
+}

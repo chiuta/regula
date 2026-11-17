@@ -1,0 +1,16 @@
+{
+  "name": "regula",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Rule engine for traditional strategy games: every game is a JSON file.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check && python3 scripts/validate.py"
+  }
+}

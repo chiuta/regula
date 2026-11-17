@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "slug": "regula",
+  "name": "REGULA — Describe any traditional board or card game in a JSON file and play it — one rules engine for every game",
+  "version": "0.2.0",
+  "updated": "2026-11-17",
+  "description": "Describe any traditional board or card game in a JSON file and play it — one rules engine for every game",
+  "egress": [],
+  "permissions": [
+    "clipboard",
+    "serviceWorker",
+    "localStorage",
+    "WebGL"
+  ],
+  "storageKeys": [
+    "regula.custom",
+    "regula.state"
+  ],
+  "sizeBytes": 473295,
+  "sha256": "b9cf5ef4d64404a2fdb6e76c56d9a1f85d9c84418882ce4dffc7f845169fe121",
+  "csp": {
+    "present": true,
+    "directives": {
+      "default-src": "'none'",
+      "script-src": "sha256×7",
+      "style-src": "sha256×3",
+      "img-src": "'self' data:",
+      "base-uri": "'none'",
+      "form-action": "'none'",
+      "manifest-src": "'self'",
+      "worker-src": "'self'"
+    },
+    "scriptInline": "hash",
+    "connect": "'none'"
+  },
+  "features": {
+    "export": true,
+    "import": false,
+    "i18n": [
+      "ro",
+      "en",
+      "fr",
+      "it",
+      "es",
+      "pt",
+      "hu",
+      "de"
+    ],
+    "pwa": {
+      "manifest": true,
+      "serviceWorker": true
+    },
+    "modules": [
+      "core",
+      "store",
+      "view",
+      "a11y",
+      "share"
+    ]
+  },
+  "kit": {
+    "version": "1.8.0",
+    "modules": [
+      "core",
+      "store",
+      "view",
+      "a11y",
+      "share"
+    ]
+  },
+  "selfSerializing": false
+}

@@ -2,15 +2,15 @@
 
 [English](ISSUES_GOOD_FIRST.md) · [Română](ISSUES_GOOD_FIRST.ro.md) · [Français](ISSUES_GOOD_FIRST.fr.md) · [Italiano](ISSUES_GOOD_FIRST.it.md) · [Español](ISSUES_GOOD_FIRST.es.md) · [Português](ISSUES_GOOD_FIRST.pt.md) · **Deutsch** · [Magyar](ISSUES_GOOD_FIRST.hu.md)
 
-- [ ] Das JSON-Schema v1.0 für Züge (Schritt, Sprung, Schlagen, Setzen) schreiben und in docs/moves.md dokumentieren
-- [ ] 5 klassische Spiele als Daten hinzufügen: Mühle, Alquerque, Hnefatafl, Mu Torere, Fanorona
-- [ ] 5 traditionelle rumänische Spiele hinzufügen (z. B. Table, Rommé-Varianten, Șapte, Mühlespiel)
-- [ ] Den minimalen Browser-Renderer für `board.type = grid` bauen
-- [ ] Einen Zufallszug-Gegner hinzufügen, der mit jeder gültigen Spieldatei funktioniert
-- [ ] Einen Regel-zu-Text-Generator hinzufügen (JSON -> lesbare Regeln auf Englisch)
-- [ ] Einen Regel-zu-Text-Generator für Rumänisch hinzufügen
-- [ ] 3 Kartenspiel-Beispiele mit einem Abschnitt `deck` im Schema hinzufügen
-- [ ] Ein kurzes Tutorial schreiben: „Das Spiel der Großeltern in 20 Minuten hinzufügen“
-- [ ] Unit-Tests für den Zugvalidator hinzufügen
+- [ ] Three Men’s Morris als mitgeliefertes Spiel hinzufügen: von `docs/examples/three-mens-morris.json` ausgehen, die Variante mit zwei weiteren Quellen vergleichen, die Namen in sieben Sprachen ergänzen und die Datei nach `data/games/` verschieben
+- [ ] Muttersprachler die französischen, italienischen, spanischen, portugiesischen, deutschen und ungarischen Texte prüfen lassen: die `notes` der fünf Spiele und die Regelsätze (`r_*`) in `src/i18n.mjs`
+- [ ] Traditionelle rumänische Brettspiele für zwei Personen ohne Würfel als Datendateien hinzufügen (ältere Verwandte fragen, für jede Regel ein Buch oder eine Seite zitieren)
+- [ ] Sechs- und Zwölfmühle (Six Men’s Morris, Twelve Men’s Morris) als Datendateien hinzufügen, mit zitierter Quelle für die Regeln (Mühlen werden bereits unterstützt)
+- [ ] Die fehlenden Tafl-Regeln im Motor ergänzen: den Schildwall-Fang, den Sieg der Verteidiger durch die Randfestung und den Sieg durch Einkreisen aller Verteidiger (neue `rules`-Felder, Sätze in acht Sprachen, Tests)
+- [ ] Weitere Tafl-Varianten als Daten hinzufügen (Brandubh, Tablut, Fetlar), jede mit Quellen und Unterschieden zu den Kopenhagener Regeln
+- [ ] Den Import eines gespeicherten Zugprotokolls ergänzen: eine Zugliste einfügen und auf dem Brett abspielen
+- [ ] Eine stärkere Computerstufe ergänzen (zum Beispiel iterative Vertiefung mit Transpositionstabelle) und testen, dass sie die aktuelle mittlere Stufe schlägt
+- [ ] Würfel und andere Zufallselemente für das Format entwerfen (ein Wurf mit Startwert, damit sich Protokolle abspielen lassen) und den Vorschlag in `docs/` schreiben
+- [ ] Drei Kartenspiel-Beispiele mit einem `deck`-Abschnitt im Schema hinzufügen (noch nicht spielbar: beschreiben, mit Quellen)
 
 Lege sie alle auf GitHub mit `scripts/create_issues.sh` an (benötigt die `gh`-CLI).

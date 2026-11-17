@@ -6,9 +6,21 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) · [SemVer](htt
 
 ## [Unveröffentlicht]
 
+## [0.2.0] - 2026-11-17
+
 ### Hinzugefügt
+- Fünf spielbare Spiele als Datendateien in `data/games/`: Mühle, Alquerque, Fanorona, Mū tōrere, Hnefatafl (Kopenhagen 11 × 11, vereinfacht), jedes mit Quellen und Hinweisen zu den getroffenen Entscheidungen.
+- Ein Regelmotor (`src/engine.mjs`) für Zwei-Personen-Spiele auf Gitter- und Graphbrettern: Setzen, Schritte, Gleiten, Fliegen, Sprünge, Annähern und Zurückziehen, Mühlen, Fang durch Einklemmen und Königsfang, gesperrte Punkte, Sieg- und Remisregeln; ein Computergegner (Minimax mit Alpha-Beta-Beschneidung).
+- Oberfläche: ein beschrifteter Knopf für jeden Punkt (Maus, Touch, Tastatur, Screenreader), ein Spielertyp je Seite, Rückgängig und Wiederholen, Tipp, Zugprotokoll, Regeln in acht Sprachen aus den Spieldaten und dein eigenes Spiel als JSON (prüfen, spielen, herunterladen).
+- `schema.json` erweitert (board, pieces, rules, status, names, notes); `docs/moves.md` (das Format) und `docs/tutorial.md` (20 Minuten), auf Englisch und Rumänisch, mit einem getesteten Beispielspiel.
+- Tests: `node --test` für den Motor (von Hand berechnete Zugzahlen), die Daten und die Dokumentation; Browsertests im Hub (acht Sprachen, Barrierefreiheit, feindlicher gespeicherter Zustand, kleine Bildschirme).
+- `src/` und `scripts/build.mjs`: Die eine `index.html` wird jetzt aus Quellen gebaut, `--check` prüft sie.
 - ISSUES_GOOD_FIRST und CODE_OF_CONDUCT in alle acht Sprachen übersetzt.
 - README auf Englisch, Rumänisch, Französisch, Italienisch, Spanisch, Portugiesisch, Deutsch und Ungarisch: Abschnitte zu Status und geplantem Umfang (abgeleitet aus `ISSUES_GOOD_FIRST.md`).
+- Installierbar (PWA): `manifest.webmanifest`, `sw.js` und die Symbole werden vom gemeinsamen Kit (`fff-kit/pwa`) erzeugt; die Seite funktioniert nach dem ersten Besuch über HTTPS offline.
+
+### Geändert
+- Der Workflow läuft auf Ubuntu 26.04 mit Node.js 26 und führt auch die Tests und die Build-Prüfung aus.
 
 ## [0.1.0] - 2026-11-13
 
