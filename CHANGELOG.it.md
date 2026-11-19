@@ -6,6 +6,12 @@ Formato: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) · [SemVer](ht
 
 ## [Non rilasciato]
 
+## [0.2.1] - 2026-11-20
+
+### Modificato
+- fff-kit 1.8.1: quando il browser blocca l’archiviazione o ne è privo (`localStorage`/`sessionStorage` generano un errore o mancano), la pagina si avvia con un’archiviazione temporanea in memoria invece di fermarsi; i dati non vengono conservati dopo la chiusura della pagina.
+- fff-kit 1.8.1: la guida che ingrandisce i controlli piccoli a 44 px misura ora anche la larghezza del corpo della pagina e dell’elemento genitore, quindi una riga di pulsanti non può più uscire dallo schermo (il gruppo resta intatto quando l’ingrandimento lo renderebbe troppo largo).
+
 ## [0.2.0] - 2026-11-17
 
 ### Aggiunto

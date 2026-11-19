@@ -2,8 +2,8 @@
   "schema": 1,
   "slug": "regula",
   "name": "REGULA — Describe any traditional board or card game in a JSON file and play it — one rules engine for every game",
-  "version": "0.2.0",
-  "updated": "2026-11-17",
+  "version": "0.2.1",
+  "updated": "2026-11-20",
   "description": "Describe any traditional board or card game in a JSON file and play it — one rules engine for every game",
   "egress": [],
   "permissions": [
@@ -16,8 +16,8 @@
     "regula.custom",
     "regula.state"
   ],
-  "sizeBytes": 473295,
-  "sha256": "b9cf5ef4d64404a2fdb6e76c56d9a1f85d9c84418882ce4dffc7f845169fe121",
+  "sizeBytes": 476801,
+  "sha256": "1c2ae269268fa0ce1e70c93607c6373719b07f5e74eeef554b32356f10cce5ae",
   "csp": {
     "present": true,
     "directives": {
@@ -59,7 +59,7 @@
     ]
   },
   "kit": {
-    "version": "1.8.0",
+    "version": "1.8.1",
     "modules": [
       "core",
       "store",

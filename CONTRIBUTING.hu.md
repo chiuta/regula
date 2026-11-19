@@ -2,7 +2,7 @@
 
 [English](CONTRIBUTING.md) · [Română](CONTRIBUTING.ro.md) · [Français](CONTRIBUTING.fr.md) · [Italiano](CONTRIBUTING.it.md) · [Español](CONTRIBUTING.es.md) · [Português](CONTRIBUTING.pt.md) · [Deutsch](CONTRIBUTING.de.md) · **Magyar**
 
-Verzió: 0.2.0 · Utolsó frissítés: 2026-11-17
+Verzió: 0.2.1 · Utolsó frissítés: 2026-11-20
 
 1. Forkold ezt a tárolót.
 2. Másold a `data/games/example.json` fájlt a `data/games/` mappába, és szerkeszd.

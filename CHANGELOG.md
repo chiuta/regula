@@ -6,6 +6,12 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) · [SemVer](htt
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-11-20
+
+### Changed
+- fff-kit 1.8.1: when the browser blocks or lacks storage (`localStorage`/`sessionStorage` throw or are missing), the page now starts with temporary in-memory storage instead of stopping; data is not kept after the page is closed.
+- fff-kit 1.8.1: the guide that enlarges small controls to 44 px now also measures the width of the page body and of the parent, so a row of buttons can no longer run off the screen (the group is left untouched when enlarging would make it too wide).
+
 ## [0.2.0] - 2026-11-17
 
 ### Added

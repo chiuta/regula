@@ -2,7 +2,7 @@
 
 [English](CONTRIBUTING.md) · **Română** · [Français](CONTRIBUTING.fr.md) · [Italiano](CONTRIBUTING.it.md) · [Español](CONTRIBUTING.es.md) · [Português](CONTRIBUTING.pt.md) · [Deutsch](CONTRIBUTING.de.md) · [Magyar](CONTRIBUTING.hu.md)
 
-Versiune: 0.2.0 · Ultima actualizare: 2026-11-17
+Versiune: 0.2.1 · Ultima actualizare: 2026-11-20
 
 1. Fă fork acestui depozit.
 2. Copiază `data/games/example.json` în `data/games/` și editează-l.

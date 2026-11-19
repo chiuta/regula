@@ -1,6 +1,6 @@
 {
   "name": "regula",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "type": "module",
   "description": "Rule engine for traditional strategy games: every game is a JSON file.",

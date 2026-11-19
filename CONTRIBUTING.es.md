@@ -2,7 +2,7 @@
 
 [English](CONTRIBUTING.md) · [Română](CONTRIBUTING.ro.md) · [Français](CONTRIBUTING.fr.md) · [Italiano](CONTRIBUTING.it.md) · **Español** · [Português](CONTRIBUTING.pt.md) · [Deutsch](CONTRIBUTING.de.md) · [Magyar](CONTRIBUTING.hu.md)
 
-Versión: 0.2.0 · Última actualización: 2026-11-17
+Versión: 0.2.1 · Última actualización: 2026-11-20
 
 1. Haz un fork de este repositorio.
 2. Copia `data/games/example.json` en `data/games/` y edítalo.
